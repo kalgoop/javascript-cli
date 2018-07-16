@@ -873,7 +873,7 @@ vorpal
 vorpal
   .command('account send <amount> <address>', 'Send <amount> ark to <address>. <amount> format examples: 10, USD10.4, EUR100')
   .action(function(args, callback) {
-		var self = this;
+    var self = this;
     if(!isConnected()){
       self.log("please connect to node or network before");
       return callback();
